@@ -1,0 +1,126 @@
+button:
+  jadwal: ':date: Schedules'
+  tugas: ':memo: Home Work'
+  help: ':wrench: Help'
+  back: ':arrow_left: Back'
+  data: ':floppy_disk: Data'
+  map : ':office: Telkom University Map'
+  sholat: ':watch: Prayer Times'
+  senin : ':one: Monday'
+  selasa : ':two: Tuesday'
+  rabu : ':three: Wednesday'
+  kamis : ':four: Thursday'
+  jumat : ':five: Friday'
+  sabtu : ':six: Saturday'
+  ujian : ':rocket: Midterm'
+  weather: ':rainbow: Weather'
+  labIoT : ':space_invader: ZeroSystem-IoT'
+  cancel: ':negative_squared_cross_mark: Cancel'
+  like: ':heart_decoration: I like this bot'
+  rate:
+    like: ":point_up: I've already rated bot"
+    later: ":hourglass: I'll rate bot later"
+    dislike: ":hankey: I don't want to rate bot"
+
+main :
+  notfound : 'Error 404 : Sorry, Data Not Found :disappointed_relieved:'
+  
+  hi : 'Hello, <%=user.first_name%>, What can I do for you?'
+  
+  senin : |
+    :red_circle:  Monday Schedules 
+    09:30 - 12:30 (A207B)   TOPIK KHUSUS 2 TELEMATIKA  
+
+  selasa : |
+    :red_circle:  Tuesday Schedules 
+    13:30 - 16:30 E301 PANCASILA DAN KEWARGANEGARAAN
+  
+  rabu : |
+    :red_circle:  Wednesday Schedules 
+     07:30 - 09:30 (A207A) PENULISAN PROPOSAL
+     09:30 - 11:30 A207B  DASAR PEMODELAN DAN SIMULASI 
+     12:30 - 15:30 (A308A) JARINGAN KOMPUTER LANJUT  
+
+  kamis : |
+    :red_circle:  Thursday Schedules
+     06:30 - 09:30 (A208B) SISTEM PARALEL DAN TERDISTRIBUSI 
+
+  jumat : |
+    :red_circle:  Friday Schedules 
+    Free
+
+  sabtu : |
+    :red_circle:  Saturday Schedules 
+    Free
+
+  minggu : |
+    :red_circle Sunday Schedules
+    Free
+
+  ujian : |
+    Not Found
+
+
+  tugas : |
+    :large_blue_circle: Our Home Work
+    1. nope
+
+  help : |
+    :white_circle: General Commands :
+      /hi - say hi and little introduction
+      /senin - Get IF-39-08's Monday Course Schedules
+      /selasa - Get IF-39-08's Tuesday Course Schedules
+      /rabu - Get IF-39-08's Wednesday Course Schedules
+      /kamis - Get IF-39-08's Thursday Course Schedules
+      /jumat - Get IF-39-08's Friday Course Schedules
+      /sabtu - Get IF-39-08's Saturday Course Schedules
+      /tugas - Get IF-39-08's Home Work
+      /sholat - Get Prayers Time Bandung
+      /maptelkom - Get Coordinate of Telkom University
+      /data - Get Data of student by type /data yourname
+      /weather - Get Forecast for Bandung
+      /help - General Information about command
+
+  sholat : |
+      :alarm_clock: <%=localtime%>
+      Coordinate : <%=latitude%>, <%=longitude%>
+      :round_pushpin: Bandung, Indonesia 
+      :clock4: Imsak    : <%=waktusholat.imsak%> 
+      :clock430: Subuh    : <%=waktusholat.fajr%> 
+      :clock530: Sun Rise : <%=waktusholat.sunrise%> 
+      :clock12: Zuhur    : <%=waktusholat.dhuhr%> 
+      :clock3: Ashar    : <%=waktusholat.asr%> 
+      :clock6: Maghrib  : <%=waktusholat.maghrib%> 
+      :clock7: Isya     : <%=waktusholat.isha%> 
+    
+  info : |
+    :heavy_check_mark: Choose Schedule 
+    
+
+  weather : |
+    :round_pushpin: Bandung, Indonesia
+    :telescope: Currently Weather Conditions:
+    ---- <%=statuss%> ----
+    Temperature : <%=temperatures%> °C
+    Dew Point : <%=dewpoint%> °C
+    Humidity : <%=humiditys%> %
+    Cloud Cover in Sky : <%=sky%> %
+    Wind Speed : <%=winds%> miles/hours
+    Wind Direction : <%=windbear%> °
+    Atmospheric Pressure : <%=pressure%> hPa
+    Area Density of Ozone : <%=ozone%> DU
+
+    :telescope: Tommorow Prediction:
+    <%=hourly%>
+
+    :telescope: Weekly Prediction:  
+    <%=today%>
+
+  iot : |
+    ZeroSystem-IoT
+    -- Outdoor --
+    Last Update : <%=wktu%>
+    Temperature : <%=tmp%> °C
+    Humidity : <%=hmdt%> %
+    -- Indoor --
+    Movement : null
